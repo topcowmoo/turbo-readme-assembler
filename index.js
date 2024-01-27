@@ -66,13 +66,22 @@ const questions = [{
     },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('README file created sucessfully'))
 };
 
-// TODO: Create a function to initialize app
-function init() {}
+// Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then((answers) => {
+        const readmeContent = generateMarkdown(answers);
+        writeToFile('README.md', readmeContent);
+    })
+    .catch((error) => {
+        console.error("An error occurred during initialization:", error);
+    });
+}
 
 // Function call to initialize app
 init();
