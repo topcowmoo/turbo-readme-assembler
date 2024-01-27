@@ -52,7 +52,7 @@ const questions = [{
     {
         type: "checkbox",
         message: "Select a licence for your project:",
-        name: "licence"
+        name: "licence",
         choices: ['Apache license 2.0', 'Microsoft Public License', 'MIT', 'Mozilla Public License 2.0']
     },
     {
@@ -69,7 +69,7 @@ const questions = [{
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('README file created sucessfully'))
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('README file created successfully'))
 };
 
 // Create a function to initialize app
