@@ -1,7 +1,7 @@
 // Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Create an array of questions for user input
 const questions = [{
@@ -52,14 +52,19 @@ const questions = [{
     },
     {
         type: "input",
-        message: "Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/):",
-        name: "badges"
+        message: "Enter test instructions for your project:",
+        name: "test"
     },
     {
         type: "input",
-        message: "If your project has a lot of features, list them here:",
-        name: "features"
+        message: "Please enter your github username:",
+        name: "github"
     },
+    {
+        type: "input",
+        message: "Please enter your email address:",
+        name: "email"
+    }
 ];
 
 // Create a function to write README file
