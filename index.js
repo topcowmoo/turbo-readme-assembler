@@ -31,11 +31,6 @@ const questions = [{
     },
     {
         type: "input",
-        message: "What was your motivation to build this project?",
-        name: "motivation"
-    },
-    {
-        type: "input",
         message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running:",
         name: "installation"
     },
@@ -51,8 +46,8 @@ const questions = [{
     },
     {
         type: "checkbox",
-        message: "Select a licence for your project:",
-        name: "licence",
+        message: "Select a license for your project:",
+        name: "license",
         choices: ['Apache license 2.0', 'Microsoft Public License', 'MIT', 'Mozilla Public License 2.0']
     },
     {

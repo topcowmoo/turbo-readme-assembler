@@ -80,8 +80,45 @@ This project is licensed under the [Mozilla Public License 2.0](https://opensour
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+    ![Github license] (http://img.shields.io/badge/license-${data.license}-blue.svg)
 
-`;
+    ## Description
+    ${data.motivation}
+    ${data.build}
+    ${data.problem}
+    ${data.learn}
+
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Badges](#badges)
+    - [Features](#features)
+    - [Questions](#questions)
+
+    ## Installation
+    ${data.installation}
+
+    ## Usage
+    ${data.usage}
+
+    ## Credits
+    ${data.collaborators}
+
+    ## License
+    ${data.license}
+
+    ## Badges
+    ${data.badges}
+
+    ## Features
+    ${data.features}
+
+    ## Questions
+
+    If you hav any questions about this repository, please feel free to contact me.
+    `;
 }
 
 module.exports = generateMarkdown;
