@@ -92,8 +92,8 @@ function generateMarkdown(data) {
     - [Installation](#installation)
     - [Usage](#usage)
     - [License](#license)
-    - [Contributing](#badges)
-    - [Tests](#features)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
     - [Questions](#questions)
 
     ## Installation
@@ -102,21 +102,20 @@ function generateMarkdown(data) {
     ## Usage
     ${data.usage}
 
-    ## Credits
-    ${data.collaborators}
-
     ## License
     ${data.license}
 
-    ## Badges
-    ${data.badges}
+    ## Contributing
+    ${data.contributing}
 
-    ## Features
-    ${data.features}
-
+    ## Tests
+    ${data.test}
+    
     ## Questions
+    
+    If you have any questions about this projects, please contact me directly at ${data.email}. My GitHub profile can be found at https://github.com/${data.github}.
 
-    If you hav any questions about this repository, please feel free to contact me.
+    ---
     `;
 }
 

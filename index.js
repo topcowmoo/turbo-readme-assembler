@@ -31,18 +31,13 @@ const questions = [{
     },
     {
         type: "input",
-        message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running: ",
+        message: "What are the steps required to install your project?:",
         name: "installation"
     },
     {
         type: "input",
-        message: "Provide instructions and examples for use of the project. Include screenshots as needed:",
+        message: "Provide instructions and examples for use of the project:",
         name: "usage"
-    },
-    {
-        type: "input",
-        message: "List your collaborators, if any, with links to their GitHub profiles:",
-        name: "collaborators"
     },
     {
         type: "checkbox",
@@ -52,8 +47,8 @@ const questions = [{
     },
     {
         type: "input",
-        message: "Enter test instructions for your project:",
-        name: "test"
+        message: "List your collaborators, if any, with links to their GitHub profiles:",
+        name: "contributing"
     },
     {
         type: "input",
@@ -64,6 +59,11 @@ const questions = [{
         type: "input",
         message: "Please enter your email address:",
         name: "email"
+    },
+    {
+        type: "input",
+        message: "What command should be run for tests>",
+        name: "test"
     }
 ];
 
