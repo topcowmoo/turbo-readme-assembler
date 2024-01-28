@@ -76,6 +76,8 @@ Please have a look at the [Contributor Covenant](https://www.contributor-covenan
 
 ## How To Report Issues
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+If you want to report a bug or issue please visit the following link from GitHub:
+
+https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository
 
 ---
