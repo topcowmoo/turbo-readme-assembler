@@ -68,8 +68,9 @@ const questions = [{
 ];
 
 // Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     const folderPath = 'sample';  // specify the folder name
+    const fileName = 'README-sample.md';
     const filePath = `${folderPath}/${fileName}`;
 
     // Check if the folder exists, create it if not
