@@ -46,42 +46,44 @@ function renderLicenseBadge(license) {
   }
   
   // Function to render the license section
-  function renderLicenseSection(license) {
-    if (!license) {
-      return '';
-    }
-  
-    const lowerCaseLicense = String(license).toLowerCase();
-  
-    switch (lowerCaseLicense) {
-      case 'apache license 2.0':
-        return `
-  ## License
-  
-  This project is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
-  `;
-      case 'microsoft public license':
-        return `
-  ## License
-  
-  This project is licensed under the [Microsoft Public License](https://opensource.org/licenses/MS-PL).
-  `;
-      case 'mit':
-        return `
-  ## License
-  
-  This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-  `;
-      case 'mozilla public license 2.0':
-        return `
-  ## License
-  
-  This project is licensed under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0).
-  `;
-      default:
-        return '';
-    }
+  // Function to render the license section
+function renderLicenseSection(license) {
+  if (!license) {
+    return '';
   }
+
+  const lowerCaseLicense = String(license).toLowerCase();
+
+  switch (lowerCaseLicense) {
+    case 'apache license 2.0':
+      return `
+## License
+
+This project is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
+`;
+    case 'microsoft public license':
+      return `
+## License
+
+This project is licensed under the [Microsoft Public License](https://opensource.org/licenses/MS-PL).
+`;
+    case 'mit':
+      return `
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+`;
+    case 'mozilla public license 2.0':
+      return `
+## License
+
+This project is licensed under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0).
+`;
+    default:
+      return '';
+  }
+}
+
   
 
 
@@ -114,7 +116,6 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License
 ${licenseSection}
 
 ## Contributing
