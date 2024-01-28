@@ -6,6 +6,8 @@ Welcome to my README generator app. This is a great tool to make a professional 
 
 Please have a look at my walkthrough video:
 
+https://drive.google.com/file/d/10SQF2hnsLHXVLR3s-993MvynMukN_M9r/view?usp=sharing
+
 
 ## Table of Contents
 
@@ -61,10 +63,10 @@ README.md generated:
 
 ## Credits
 
-[ChatGPT](https://chat.openai.com/)
+ChatGPT
 Xpert Assistant
-Full-Stack-Blog: (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/)
-Make a README: (https://www.makeareadme.com/)
+Full-Stack-Blog
+Make a README
 
 ## Built With
 
