@@ -110,7 +110,6 @@ If you have any questions about this projects, please contact me directly at ${d
 `;
 }
 
-// ... (Your existing code)
 
 // Create a function to write README file
 function writeToFile(data) {
@@ -123,6 +122,12 @@ function writeToFile(data) {
         fs.mkdirSync(folderPath);
     }
 
+    // Remove existing file if it exists
+    if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath);
+    }
+
+    // Write the new file
     fs.writeFile(filePath, data, (err) => {
         if (err) {
             console.error(err);
