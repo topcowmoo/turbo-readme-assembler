@@ -69,8 +69,22 @@ const questions = [{
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('README file created successfully'))
-};
+    const folderPath = 'sample';  // specify the folder name
+    const filePath = `${folderPath}/${fileName}`;
+
+    // Check if the folder exists, create it if not
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath);
+    }
+
+    fs.writeFile(filePath, data, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log(`README file created successfully at ${filePath}`);
+        }
+    });
+}
 
 // Create a function to initialize app
 function init() {
@@ -82,6 +96,8 @@ function init() {
     .catch((error) => {
         console.error("An error occurred during initialization:", error);
     });
+    
+
 }
 
 // Function call to initialize app
