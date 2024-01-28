@@ -92,13 +92,11 @@ function init() {
     inquirer.prompt(questions)
     .then((answers) => {
         const readmeContent = generateMarkdown(answers);
-        writeToFile('README.md', readmeContent);
+        writeToFile(readmeContent);
     })
     .catch((error) => {
         console.error("An error occurred during initialization:", error);
     });
-    
-
 }
 
 // Function call to initialize app
